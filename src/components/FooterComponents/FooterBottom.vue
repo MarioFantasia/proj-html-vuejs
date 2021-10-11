@@ -1,6 +1,11 @@
 <template>
-    <div class="footer_bottom">
-
+    <div class="footer_bottom flex">
+        <div>Copyrights 2017 <span>fontawesome </span>Mikado Themes</div>
+        <div class="flex">
+            <div>CALL +44 300 303 0266</div>
+            <div class="social">FOLLOW US : fontawesome social</div>
+            
+        </div>
     </div>
 </template>
 

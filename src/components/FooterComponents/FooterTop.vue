@@ -18,6 +18,5 @@ export default {
     .footer_top {
         height: 400px;
         padding-top: 100px;
-        background-color: grey;
     }
 </style>
