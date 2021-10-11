@@ -1,7 +1,9 @@
 <template>
     <header>
-        <HeaderTop></HeaderTop>
-        <HeaderBottom></HeaderBottom>
+        <div class="container">
+            <HeaderTop></HeaderTop>
+            <HeaderBottom></HeaderBottom>
+        </div>
     </header>
 </template>
 
@@ -19,5 +21,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+    header {
+        background-image: url('../assets/img/header/course-9-f-img.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        /* aggiungere efetto filter */
+        &::before { /* per applicare il filtro al bg */
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.2;
+        }
+    }
 </style>

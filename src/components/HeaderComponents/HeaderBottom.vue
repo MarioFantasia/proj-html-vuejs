@@ -18,8 +18,9 @@ export default {
 
 <style lang="scss" scoped>
     .header_bottom {
-        height: 500px;
-        background-color: blue;
+        height: calc(100vh - 80px);
+        position: relative; /* per non applicare l'opacity all'elemento */
+        color: white;
         div {
             width: 60%;
             margin: auto;

@@ -21,7 +21,7 @@ export default {
     .header_top {
         height: 80px;
         justify-content: space-between;
-        background-color:red;
+        position: relative; /* per non applicare l'opacity all'elemento */
         .logo {
             width: 200px;
             margin: auto 1px;
