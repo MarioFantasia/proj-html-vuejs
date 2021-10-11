@@ -1,7 +1,7 @@
 <template>
     <div class="header_top flex">
         <div class="logo col-2">
-            <img src="../../assets/img/header/logo-light.png" alt="">
+            <img src="../../assets/img/header/logo-light.png" alt="logo">
         </div>
         <HeaderNavbar></HeaderNavbar>
     </div>

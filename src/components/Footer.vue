@@ -1,7 +1,9 @@
 <template>
     <footer>
-        <FooterTop></FooterTop>
-        <FooterBottom></FooterBottom>
+        <div class="container">
+            <FooterTop></FooterTop>
+            <FooterBottom></FooterBottom>
+        </div>
     </footer>
 </template>
 
@@ -18,5 +20,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+    footer {
+        background-color: red;
+    }
 </style>
