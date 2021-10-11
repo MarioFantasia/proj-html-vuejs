@@ -1,7 +1,7 @@
 <template>
     <div class="header_top flex">
         <div class="logo">
-            logo
+            <img src="../../assets/img/header/logo-light.png" alt="">
         </div>
         <HeaderNavbar></HeaderNavbar>
     </div>
@@ -23,10 +23,11 @@ export default {
         justify-content: space-between;
         background-color:red;
         .logo {
-            width: 50px;
-            height: 50px;
+            width: 200px;
             margin: auto 1px;
-            background-color: yellow;
+            img {
+                width: 100%;
+            }
         }
     }
 </style>
