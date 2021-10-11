@@ -21,5 +21,7 @@ export default {
 </script>
 
 <style lang="scss">
+/* importo il file common.scss */
+  @import './assets/style/common.scss';
 
 </style>

@@ -1,0 +1,19 @@
+/* bootstrap */
+@import '~bootstrap/scss/bootstrap';
+
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* classi flex */ 
+.flex {
+    display: flex;
+}
+
+.cflex {
+    display: flex;
+    flex-direction: column;
+}
