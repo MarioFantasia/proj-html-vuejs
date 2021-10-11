@@ -1,6 +1,6 @@
 <template>
     <div class="header_top flex">
-        <div class="logo">
+        <div class="logo col-2">
             <img src="../../assets/img/header/logo-light.png" alt="">
         </div>
         <HeaderNavbar></HeaderNavbar>
@@ -21,9 +21,9 @@ export default {
     .header_top {
         height: 80px;
         justify-content: space-between;
-        position: relative; /* per non applicare l'opacity all'elemento */
+        /* per non applicare l'opacity all'elemento */
+        position: relative;
         .logo {
-            width: 200px;
             margin: auto 1px;
             img {
                 width: 100%;
