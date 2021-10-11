@@ -21,6 +21,8 @@ export default {
 </script>
 
 <style lang="scss">
+  /* importo fontawesome */
+  @import '~@fortawesome/fontawesome-free/css/all.css';
 /* importo il file common.scss */
   @import './assets/style/common.scss';
 
