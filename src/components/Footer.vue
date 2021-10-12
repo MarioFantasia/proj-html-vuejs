@@ -21,7 +21,7 @@ export default {
 
 <style lang="scss" scoped>
     footer {
-        color: white;
-        background-color: grey;
+        color: #b9b9b9;
+        background-color: #222222;
     }
 </style>

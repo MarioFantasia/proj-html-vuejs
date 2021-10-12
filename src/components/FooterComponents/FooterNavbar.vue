@@ -7,23 +7,32 @@
             </div>
 
             <ul>
-                <li v-for="(elm, index) in todos" :key="index">{{elm}}</li>
+                <li v-for="(elm, index) in todos" :key="index">
+                    <a href="#">{{elm}}</a>
+                </li>
             </ul>
             <!-- modificare successivamente per inserire le fontawesome -->
-            <div v-for="(elm, index) in infos" :key="index">{{elm}}</div>
-        </div>
-
-        <div class="list_courses col-3">
-            <h3>Popular Courses</h3>
-            <ul>
-                <li  v-for="(elm, index) in courses" :key="index">{{elm}}</li>
-            </ul>
+            <div v-for="(elm, index) in infos" :key="index">
+                <i :class="elm.icon"></i>
+                <span>{{elm.info}}</span>
+            </div>
         </div>
 
         <div class="col-3">
+            <h3>Popular Courses</h3>
+            <ul class="list_courses">
+                <li  v-for="(elm, index) in courses" :key="index">
+                    <a href="#">{{elm}}</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="support col-3">
             <h3>Support</h3>
             <ul>
-                <li  v-for="(elm, index) in supports" :key="index">{{elm}}</li>
+                <li v-for="(elm, index) in supports" :key="index">
+                    <a href="#">{{elm}}</a>
+                </li>
             </ul> 
         </div>
 
@@ -49,13 +58,16 @@ export default {
                 'Busy Life. Closer to Home'
             ],
 
-            icons : [
-                /* mettere i codici delle fontawesome */
-            ],
-
             infos : [
-                '1-677-124-44227',
-                'Mon-Sat 8.00-18.00'
+                {
+                    info: '1-677-124-44227',
+                    icon :'fas fa-phone-alt'
+                },
+                
+                {
+                    info: 'Mon-Sat 8.00-18.00',
+                    icon: 'far fa-clock'
+                }
             ],
 
             courses : [
@@ -89,9 +101,34 @@ export default {
                 width: 100%;
             }
         }
+        a {
+            color: #b9b9b9;
+            &:hover {
+                color: #3db5eb;
+            } 
+        }
     }
+
     h3 {
-            margin-bottom: 20px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .first_col li, .support li {
+        margin-bottom: 10px;
+    }
+
+    .first_col i {
+        margin-right: 10px;
+    }
+
+    .list_courses li:nth-child(odd) {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .list_courses li:nth-child(even) {
+        margin-bottom: 20px;
     }
 
     .map {
