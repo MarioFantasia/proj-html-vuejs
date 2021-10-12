@@ -8,7 +8,8 @@
             <SectionFour></SectionFour>
         <div class="container">
             <SectionLearning></SectionLearning>
-            <!-- altre sezioni -->
+            <SectionCourses></SectionCourses>
+            <SectionPricing></SectionPricing>
             <SectionBottom></SectionBottom>
         </div>
         
@@ -21,7 +22,8 @@ import SectionTutoring from './MainComponents/SectionTutoring.vue'
 import SectionThree from './MainComponents/SectionThree.vue'
 import SectionFour from './MainComponents/SectionFour.vue'
 import SectionLearning from './MainComponents/SectionLearning.vue'
-/* altre sezioni */
+import SectionCourses from './MainComponents/SectionCourses.vue'
+import SectionPricing from './MainComponents/SectionPricing.vue'
 import SectionBottom from './MainComponents/SectionBottom.vue'
 export default {
     name : 'Main',
@@ -31,7 +33,8 @@ export default {
         SectionThree,
         SectionFour,
         SectionLearning,
-        /* altre sezioni */
+        SectionCourses,
+        SectionPricing,
         SectionBottom
     }
 }
