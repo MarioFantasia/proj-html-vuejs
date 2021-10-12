@@ -67,6 +67,7 @@ export default {
             .box{
                 margin: auto;
                 text-align: center;
+                font-weight: 500;
                 img {
                     margin-bottom: 10px;
                 }
