@@ -1,12 +1,18 @@
 <template>
     <main>
-        
+        <div class="container">
+            <SectionTop></SectionTop>
+        </div>
     </main>
 </template>
 
 <script>
+import SectionTop from './MainComponents/SectionTop.vue'
 export default {
-    name : 'Main'
+    name : 'Main',
+    components : {
+        SectionTop
+    }
 }
 </script>
 

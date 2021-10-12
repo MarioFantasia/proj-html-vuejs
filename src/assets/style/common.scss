@@ -18,6 +18,11 @@
     flex-direction: column;
 }
 
+/* rimuove le scrollbar da tutti gli elementi */
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 /* common */
 a {
     color: white;

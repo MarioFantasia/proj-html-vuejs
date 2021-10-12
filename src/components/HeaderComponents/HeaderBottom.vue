@@ -4,7 +4,7 @@
             <h1>Contemporary Ideas</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis nostrum natus hic est ab recusandae, facilis repellat eveniet unde praesentium, doloribus ratione sint! Repudiandae perspiciatis sit molestiae commodi quibusdam ipsum.</p>
             <div class="header_button flex">
-                <button>REISTER NOW</button>
+                <button>REGISTER NOW</button>
             </div>
         </div>
     </div>
@@ -37,8 +37,10 @@ export default {
                 padding: 18px 60px;
                 border: none;
                 font-weight: 500;
-                color: white;
-                background-color: blue; /* blue da cambiare */
+                &:hover {
+                    color: white;
+                    background-color: #40c4ff;
+                }
             }
         }
         h1, p, .header_buttom {

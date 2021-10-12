@@ -134,7 +134,7 @@ export default {
     .map {
         width: 100%;
         img {
-            width: 70%;
+            width: 100%;
         }
     }
 
