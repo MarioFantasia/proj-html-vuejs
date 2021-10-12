@@ -23,7 +23,7 @@ export default {
 
 <style lang="scss" scoped>
     section {
-        height: 100vh;
+        height: 500px;
         background-image: url('../../assets/img/main/h5-parallax-img-1.png');
         background-size: cover;
         background-position: top;
