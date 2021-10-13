@@ -8,8 +8,10 @@
             <SectionFour></SectionFour>
         <div class="container">
             <SectionLearning></SectionLearning>
+        </div>
             <SectionCourses></SectionCourses>
             <SectionPricing></SectionPricing>
+        <div class="container">
             <SectionBottom></SectionBottom>
         </div>
     </main>
