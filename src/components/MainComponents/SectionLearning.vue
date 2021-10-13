@@ -1,9 +1,9 @@
 <template>
     <section>
         <div class="row">
-            <div class="col-3">
-                <div class="program"  v-for="(elm, index) in programs" :key="index">{{elm}}</div>
-            </div>
+            <ul class="col-3">
+                <li class="program"  v-for="(elm, index) in programs" :key="index">{{elm}}</li>
+            </ul>
             <div class="col-9">
                 <div class="text">
                     <h2>Learning Possibilities</h2>
@@ -50,16 +50,24 @@ export default {
 <style lang="scss" scoped>
     section {
         padding: 50px 0;
-
+        color: #847b7b;
         .row {
             height: 100%;
             .col-3 {
                 height: 100%;
+                padding: 0;
+                border: 1px solid;
+                border-bottom: 0;
                 .program {
                     height: 70px;
                     line-height: 70px;
                     padding-left: 30px;
-                    border: 1px solid;
+                    font-weight: 700;
+                    border-bottom: 1px solid;
+                    &:hover {
+                        border-left: 5px solid #45c6ff;
+                        background-color: #f2f2f2;
+                    }
                 }
             }
 
@@ -71,6 +79,9 @@ export default {
                     h2 {
                         height:70px;
                         line-height:70px;
+                        font-size: 40px;
+                        font-weight: 500;
+                        color: black;
                     }
 
                     p {
