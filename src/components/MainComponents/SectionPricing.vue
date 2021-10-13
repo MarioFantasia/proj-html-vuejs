@@ -31,7 +31,7 @@
                         <li><i class="fas fa-times"></i></li>
                     </ul>
                     <div class="button">
-                        <button></button>
+                        <button>GET IT NOW</button>
                     </div>
                 </div>
 
@@ -54,7 +54,7 @@
                         <li><i class="fas fa-times"></i></li>
                     </ul>
                     <div class="button">
-                        <button></button>
+                        <button>GET IT NOW</button>
                     </div>
                 </div>
 
@@ -77,7 +77,7 @@
                         <li><i class="fas fa-check"></i></li>
                     </ul>
                     <div class="button">
-                        <button></button>
+                        <button>GET IT NOW</button>
                     </div>
                 </div>
 
@@ -111,28 +111,62 @@ export default {
         background-image: url('../../assets/img/main/background-pattern.jpg');
         .container {
             height: 100%;
+            border: 1px solid #efefef;
+            .col-3 {
+                padding: 0;
+            }
         }
     }
 
     .box {
         height: 250px;
+        background-color: #fff;
+        border: 1px solid #efefef;
+    }
+    
+    ul {
+        margin: 0;
     }
 
     li {
         height: 50px;
-        background-color: lightgrey;
+        background-color: #fff;
         border: 1px solid;
         text-align: center;
         line-height: 50px;
+        border: 1px solid #efefef;
+        .fa-check {
+            color: #40c4ff;
+        }
+
+        .fa-times {
+            color: #8f8f8f;
+        }
+
     }
 
     h3 {
         margin: auto 0;
+        text-align: center;
     }
 
     .box_image {
-        background-color: #a5a5;
         text-align: center;
         justify-content: center;
+    }
+
+    .button {
+        text-align: center;
+        padding: 30px;
+        background-color: #f7fdff;
+        border: 1px solid #efefef;
+
+        button {
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            border: 1px solid #efefef;
+
+        }
     }
 </style>
