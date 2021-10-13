@@ -12,7 +12,6 @@
             <SectionPricing></SectionPricing>
             <SectionBottom></SectionBottom>
         </div>
-        
     </main>
 </template>
 

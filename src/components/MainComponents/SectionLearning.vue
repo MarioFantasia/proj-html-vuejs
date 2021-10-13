@@ -1,12 +1,21 @@
 <template>
     <section>
         <div class="row">
-            <div class="col-3"></div>
+            <div class="col-3">
+                <div class="program"  v-for="(elm, index) in programs" :key="index">{{elm}}</div>
+            </div>
             <div class="col-9">
-                <div class="text"></div>
+                <div class="text">
+                    <h2>Learning Possibilities</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus illum quaerat, magni ut quisquam assumenda eligendi in ipsam asperiores consequuntur nihil dolorem optio, quo vitae. Pariatur similique est laboriosam suscipit.</p>
+                </div>
                 <div class="info flex">
-                    <div class="todo"></div>
-                    <div class="image"></div>
+                    <div class="todo">
+                        <div v-for="(elm, index) in actions" :key="index"><i class="fas fa-check"></i> {{elm}}</div>
+                    </div>
+                    <div class="image cflex">
+                        <img src="../../assets/img/main/h12-tabs-icon-1.png" alt="img">
+                    </div>
                 </div>
             </div>
         </div>
@@ -40,33 +49,59 @@ export default {
 
 <style lang="scss" scoped>
     section {
-        height: 100vh;
         padding: 50px 0;
+
         .row {
             height: 100%;
             .col-3 {
                 height: 100%;
-                background-color: red;
+                .program {
+                    height: 70px;
+                    line-height: 70px;
+                    padding-left: 30px;
+                    border: 1px solid;
+                }
             }
+
             .col-9 {
                 height: 100%;
-                background-color: blue;
                 .text {
                     height: 50%;
-                    background-color: green;
+                    padding: 0 300px 0 30px;
+                    h2 {
+                        height:70px;
+                        line-height:70px;
+                    }
+
+                    p {
+                        margin-bottom: 50px;
+                    }
+
                 }
+
                 .info {
                     height: 50%;
-                    background-color: grey;
+                    padding-left: 30px;
                     .todo {
                         width: 70%;
                         height: 100%;
-                        background-color: pink;
+                        div {
+                            margin-bottom: 30px;
+                            i {
+                                color: #45c6ff;
+                            }
+                        }
                     }
+
                     .image {
                         width: 30%;
                         height: 100%;
-                        background-color: orange;
+                        margin-top: auto;
+                        img {
+                            width: 50%;
+                            height: 50%;
+                            margin-right: auto;
+                        }
                     }
                 }
             }
