@@ -64,7 +64,6 @@ export default {
         
         .container {
             height: 100%;
-            padding: 50px;
             .text {
                 text-align: center;
                 h2 {
