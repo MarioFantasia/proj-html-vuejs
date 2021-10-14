@@ -9,8 +9,10 @@
         <div class="container">
             <SectionLearning></SectionLearning>
         </div>
+        <div class="bgc">
             <SectionCourses></SectionCourses>
             <SectionPricing></SectionPricing>
+        </div>
         <div class="container">
             <SectionBottom></SectionBottom>
         </div>
@@ -42,5 +44,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+    .bgc {
+        background-image: url('../assets/img/main/background-pattern.jpg');
+    }
 </style>

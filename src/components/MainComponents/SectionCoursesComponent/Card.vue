@@ -36,9 +36,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    $principalColor : #40c4ff;
+    $textColor : #a6a6a6;
     .box {
-        color: #a6a6a6;
+        color: $textColor;
         border: 2px solid #f2f2f2;
+        background-color: #fff;
         img {
             width: 100%;
         }
@@ -61,6 +64,10 @@ export default {
         .info, .bottom {
             padding: 10px;
         }
+        p {
+            color: $textColor;
+        }
+
         .bottom span {
             margin-right: 8px;
         }
@@ -71,6 +78,6 @@ export default {
     }
 
     .pay {
-        background-color: #45c6ff;
+        background-color: $principalColor;
     }
 </style>

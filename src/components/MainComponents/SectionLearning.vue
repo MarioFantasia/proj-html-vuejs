@@ -48,74 +48,57 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    section {
-        padding: 50px 0;
-        color: #847b7b;
-        .row {
-            height: 100%;
-            .col-3 {
-                height: 100%;
-                padding: 0;
-                border: 1px solid;
-                border-bottom: 0;
-                .program {
-                    height: 70px;
-                    line-height: 70px;
-                    padding-left: 30px;
-                    font-weight: 700;
-                    border-bottom: 1px solid;
-                    &:hover {
-                        border-left: 5px solid #45c6ff;
-                        background-color: #f2f2f2;
-                    }
-                }
-            }
+    $principalColor : #40c4ff;
 
-            .col-9 {
-                height: 100%;
-                .text {
-                    height: 50%;
-                    padding: 0 300px 0 30px;
-                    h2 {
-                        height:70px;
-                        line-height:70px;
-                        font-size: 40px;
-                        font-weight: 500;
-                        color: black;
-                    }
-
-                    p {
-                        margin-bottom: 50px;
-                    }
-
-                }
-
-                .info {
-                    height: 50%;
-                    padding-left: 30px;
-                    .todo {
-                        width: 70%;
-                        height: 100%;
-                        div {
-                            margin-bottom: 30px;
-                            i {
-                                color: #45c6ff;
-                            }
-                        }
-                    }
-
-                    .image {
-                        width: 30%;
-                        height: 100%;
-                        margin-top: auto;
-                        img {
-                            width: 50%;
-                            height: 50%;
-                            margin-right: auto;
-                        }
-                    }
-                }
+    .col-3 {
+        padding: 0;
+        border: 1px solid;
+        border-bottom: 0;
+        .program {
+            line-height: 70px;
+            padding-left: 30px;
+            font-weight: 700;
+            border-bottom: 1px solid;
+            color: #847b7b;
+            &:hover {
+                border-left: 5px solid $principalColor;
+                color: $principalColor;
+                background-color: #f2f2f2;
             }
         }
     }
+
+    .text {
+        padding: 0 300px 0 30px;
+        h2 {
+            line-height:70px;
+        }
+
+        p {
+            margin-bottom: 70px;
+        }
+    }
+
+    .info {
+        padding-left: 30px;
+        .todo {
+            width: 70%;
+            div {
+                margin-bottom: 30px;
+                i {
+                    color: $principalColor;
+                }
+            }
+        }
+
+        .image {
+            width: 30%;
+            margin-top: auto;
+            img {
+                width: 50%;
+                margin-right: auto;
+            }
+        }
+    }
+
 </style>

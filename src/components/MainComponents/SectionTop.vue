@@ -51,27 +51,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    section {
-        height: 300px;
-        .row {
-            height: 100%;
-            justify-content: space-between;
+    .row {
+        justify-content: space-between;
+    }
+    .work {
+        width: 100%;
+        height: 150px;
+        margin: auto;
+        &:hover {
+            background-color: #f2f8fc;
         }
-        .work {
-            width: 100%;
-            height: 80%;
+        .box {
             margin: auto;
-            &:hover {
-                background-color: #f2f8fc;
+            text-align: center;
+            font-weight: 500;
+            img {
+                margin-bottom: 10px;
             }
-            .box{
-                margin: auto;
-                text-align: center;
-                font-weight: 500;
-                img {
-                    margin-bottom: 10px;
-                }
+
+            div {
+                font-size: 20px;
+                font-weight: 700;
             }
         }
     }
+
 </style>

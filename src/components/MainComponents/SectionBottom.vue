@@ -44,20 +44,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    section {
-        height: 200px;
-        .row {
-            margin: auto 0;
-        }
-        .on_hover {
-                display: none;
-            }
-        .image:hover .out_hover{
+    .row {
+        margin: auto 0;
+    }
+    .on_hover {
             display: none;
         }
-        .image:hover .on_hover {
-            display: block;
-        }
-
+    .image:hover .out_hover{
+        display: none;
+    }
+    .image:hover .on_hover {
+        display: block;
     }
 </style>

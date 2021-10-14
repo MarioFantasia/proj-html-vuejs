@@ -1,16 +1,14 @@
 <template>
     <section>
         <div class="container">
-            <div class="text">
+            <div class="text cflex">
                 <h2>Popular Online Courses</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo nostrum provident distinctio nam perferendis deleniti amet consectetur quidem eos nisi, quod ducimus, consequatur officiis rerum quasi, necessitatibus ullam vel! Modi.</p>
             </div>
             <div class="card_items row">
-                <!-- rendere parte dinamica -->
                 <div class="box col-4" v-for="(elm, index) in cards" :key="index">
                     <Card :element="elm "></Card>
                 </div>
-                
             </div>
         </div>
     </section>
@@ -58,25 +56,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    section {
-        height: 100vh;
-        background-image: url('../../assets/img/main/background-pattern.jpg');
-        
-        .container {
-            height: 100%;
-            .text {
-                text-align: center;
-                h2 {
-                    font-size: 45px;
-                    margin-bottom: 20px;
-                }
-                p {
-                    padding: 0 100px;
-                    margin-bottom: 50px;
-                    color: #898989;
-                    font-weight: 500;
-                }
-            }
+    .text {
+        height: 200px;
+        text-align: center;
+        justify-content: center;
+        h2, p {
+            margin-bottom: 30px;
+            padding: 0 100px;
         }
     }
 </style>

@@ -34,8 +34,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    $principalColor : #40c4ff;
     section {
-        padding: 100px 0 40px 0;
         .image {
             width: 100%;
             img {
@@ -44,22 +44,16 @@ export default {
             }
         }
 
-        h2 {
-            font-size: 40px;
-            font-weight: 500;
-            margin-bottom: 30px;
-        }
-
-        p {
+        h2, p {
             margin-bottom: 30px;
         }
 
         .data {
-            color: #40c4ff;
+            color: $principalColor;
         }
 
         h3 {
-            font-size: 40px;
+            font-size: 50px;
         }
     }
 </style>

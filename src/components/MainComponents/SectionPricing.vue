@@ -1,16 +1,18 @@
 <template>
     <section>
         <div class="container">
+            <div class="text cflex">
+                <h2>Pricing Plans</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate quasi ipsum.</p>
+            </div>
             <div class="row">
-
                 <div class="col-3">
                     <div class="box flex">
                         <h3 class="flex">Save up to 40% by paying weekly</h3>
                     </div>
                     <ul>
-                        <li v-for="(elm, index) in indicator" :key="index">{{elm}}</li>
+                        <li class="classes" v-for="(elm, index) in indicator" :key="index">{{elm}}</li>
                     </ul>
-                    <div class="empty"></div>
                 </div>
 
 
@@ -113,46 +115,57 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    section {
-        background-image: url('../../assets/img/main/background-pattern.jpg');
-        .container {
-            height: 100%;
-            border: 1px solid #efefef;
-            .col-3 {
-                padding: 0;
-                &:hover .box_image {
-                    border-top-color: #40c4ff;
-                }
+    $principalColor : #40c4ff;
+    $secondColor : #efefef;
+    $threeColor : #f7fdff;
+    $textColor : #8e8e8e;
+
+    .row {
+        border: 1px solid $secondColor;
+        background-color: white;
+        .col-3 {
+            padding: 0;
+            &:hover .box_image {
+                border-top-color: $principalColor;
             }
         }
     }
 
+    .text {
+        height: 200px;
+        text-align: center;
+        padding: 0 100px;
+        justify-content: center;
+    }
+
     .box {
-        height: 250px;
-        background-color: #fff;
-        border: 1px solid #efefef;
+        height: 200px;
+        border: 1px solid $secondColor;
         border-top: 3px solid #d6f2ff;
     }
     
     ul {
         margin: 0;
+        color: $textColor;
     }
 
     li {
-        height: 50px;
-        background-color: #fff;
         border: 1px solid;
         text-align: center;
         line-height: 50px;
-        border: 1px solid #efefef;
+        font-weight: 500;
+        border: 1px solid $secondColor;
         .fa-check {
-            color: #40c4ff;
+            color: $principalColor;
         }
 
         .fa-times {
             color: #8f8f8f;
         }
+    }
 
+    .classes {
+        font-weight: 700;
     }
 
     h3 {
@@ -160,32 +173,30 @@ export default {
         text-align: center;
     }
 
-    .empty {
-        width: 100%;
-        height: 120px;
-        background-color: #fff;
-    }
-
     .box_image {
         text-align: center;
         justify-content: center;
-        background-color: #f7fdff;
+        background-color: $threeColor;
+        font-size: 20px;
+        font-weight: 700;
     }
 
     .button {
         text-align: center;
         padding: 30px;
-        background-color: #f7fdff;
-        border: 1px solid #efefef;
+        background-color: $threeColor;
+        border: 1px solid $secondColor;
 
         button {
             width: 100%;
             height: 60px;
+            color: $textColor;
+            font-weight: 700;
             background-color: white;
-            border: 1px solid #efefef;
+            border: 1px solid $secondColor;
             &:hover {
                 color: white;
-                background-color: #40c4ff;
+                background-color: $principalColor;
             }
         }
     }

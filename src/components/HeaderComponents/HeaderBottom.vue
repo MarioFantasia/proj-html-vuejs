@@ -2,7 +2,7 @@
     <div class="header_bottom cflex">
         <div class="cflex">
             <h1>Contemporary Ideas</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis nostrum natus hic est ab recusandae, facilis repellat eveniet unde praesentium, doloribus ratione sint! Repudiandae perspiciatis sit molestiae commodi quibusdam ipsum.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis nostrum natus hic est ab recusandae, facilis repellat eveniet unde praesentium, doloribus ratione sint! Repudiandae perspiciatis sit molestiae commodi.</p>
             <div class="header_button flex">
                 <button>REGISTER NOW</button>
             </div>
@@ -17,11 +17,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    $principalColor : #40c4ff;
+    $textColor : white;
     .header_bottom {
         height: calc(100vh - 80px);
         /* per non applicare l'opacity all'elemento */
         position: relative;
-        color: white;
+        color: $textColor;
         div {
             width: 80%;
             margin: auto;
@@ -38,12 +40,12 @@ export default {
                 border: none;
                 font-weight: 500;
                 &:hover {
-                    color: white;
-                    background-color: #40c4ff;
+                    color: $textColor;
+                    background-color: $principalColor;
                 }
             }
         }
-        h1, p, .header_buttom {
+        h1, p, .header_button {
                 margin: 20px auto;
             }
     }

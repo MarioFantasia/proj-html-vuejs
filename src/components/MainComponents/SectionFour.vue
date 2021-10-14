@@ -34,9 +34,6 @@ export default {
                 color: white;
             }
         }
-        .image, p {
-            margin-bottom: 30px;
-        }
 
         .image img {
             width: 10%;
@@ -45,6 +42,11 @@ export default {
         p {
             font-size: 18px;
             padding: 0 300px;
+            color: white;
+        }
+
+        img, p {
+            margin-bottom: 30px;
         }
     }
 

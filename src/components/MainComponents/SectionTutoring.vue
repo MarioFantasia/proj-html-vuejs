@@ -19,6 +19,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    $principalColor : #3db5eb;
     section {
         h2 {
             width: 45%;
@@ -26,8 +27,12 @@ export default {
             font-weight: 500;
         }
 
+        h2, p {
+            margin-bottom: 30px;
+        }
+
         a {
-            color: #40c4ff;
+            color: $principalColor;
             font-weight: 500;
         }
 

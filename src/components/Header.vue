@@ -26,8 +26,8 @@ export default {
         background-size: cover;
         background-position: center;
         position: relative;
-        /* aggiungere efetto filter */
-        &::before { /* per applicare il filtro al bg */
+        /* per applicare il filtro al bg */
+        &::before { 
             position: absolute;
             content: "";
             top: 0;
