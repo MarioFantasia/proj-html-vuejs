@@ -165,7 +165,8 @@ export default {
     }
 
     .classes {
-        font-weight: 700;
+        font-weight: 800;
+        font-family: 'Andada Pro', serif;
     }
 
     h3 {
@@ -179,6 +180,11 @@ export default {
         background-color: $threeColor;
         font-size: 20px;
         font-weight: 700;
+    }
+
+    .type, .cost {
+        font-family: 'Andada Pro', serif;
+        font-weight: 800;
     }
 
     .button {

@@ -1,5 +1,7 @@
 /* bootstrap */
 @import '~bootstrap/scss/bootstrap';
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;500;600;700;800&display=swap');
 
 /* reset */
 * {
@@ -32,9 +34,16 @@ section {
     padding: 50px 0;
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: 'Andada Pro', serif;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
 h2 {
     font-size: 40px;
-    font-weight: 500;
     color: black;
 }
 

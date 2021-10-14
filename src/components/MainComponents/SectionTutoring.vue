@@ -23,8 +23,6 @@ export default {
     section {
         h2 {
             width: 45%;
-            font-size: 40px;
-            font-weight: 500;
         }
 
         h2, p {
