@@ -26,6 +26,8 @@ export default {
         background-size: cover;
         background-position: center;
         position: relative;
+        /* z index per elemento *up_page in Main.vue */
+        z-index: 5;
         /* per applicare il filtro al bg */
         &::before { 
             position: absolute;
