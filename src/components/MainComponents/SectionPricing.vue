@@ -10,7 +10,9 @@
                     <ul>
                         <li v-for="(elm, index) in indicator" :key="index">{{elm}}</li>
                     </ul>
+                    <div class="empty"></div>
                 </div>
+
 
                 <div class="col-3">
                     <div class="box box_image cflex">
@@ -38,10 +40,10 @@
                 <div class="col-3">
                     <div class="box box_image cflex">
                         <div class="image">
-                            <img src="../../assets/img/main/h5-custom-icon-7.png" alt="">
+                            <img src="../../assets/img/main/h5-custom-icon-8.png" alt="">
                         </div>
-                        <div class="type">Standard</div>
-                        <div class="cost">$12</div>
+                        <div class="type">Professional</div>
+                        <div class="cost">$59</div>
                     </div>
                     <ul>
                         <li>4</li>
@@ -61,10 +63,10 @@
                 <div class="col-3">
                     <div class="box box_image cflex">
                         <div class="image">
-                            <img src="../../assets/img/main/h5-custom-icon-7.png" alt="">
+                            <img src="../../assets/img/main/h5-custom-icon-9.png" alt="">
                         </div>
-                        <div class="type">Standard</div>
-                        <div class="cost">$12</div>
+                        <div class="type">Advance</div>
+                        <div class="cost">$88</div>
                     </div>
                     <ul>
                         <li>6</li>
@@ -100,7 +102,11 @@ export default {
                 'Phyton for Everybody',
                 'Android Developer',
                 'Business English',
-            ]
+            ],
+            standard : false,
+            proifessional : false,
+            advance : false
+            
         }
     }
 }
@@ -114,6 +120,9 @@ export default {
             border: 1px solid #efefef;
             .col-3 {
                 padding: 0;
+                &:hover .box_image {
+                    border-top-color: #40c4ff;
+                }
             }
         }
     }
@@ -122,6 +131,7 @@ export default {
         height: 250px;
         background-color: #fff;
         border: 1px solid #efefef;
+        border-top: 3px solid #d6f2ff;
     }
     
     ul {
@@ -150,9 +160,16 @@ export default {
         text-align: center;
     }
 
+    .empty {
+        width: 100%;
+        height: 120px;
+        background-color: #fff;
+    }
+
     .box_image {
         text-align: center;
         justify-content: center;
+        background-color: #f7fdff;
     }
 
     .button {
@@ -166,7 +183,10 @@ export default {
             height: 60px;
             background-color: white;
             border: 1px solid #efefef;
-
+            &:hover {
+                color: white;
+                background-color: #40c4ff;
+            }
         }
     }
 </style>
